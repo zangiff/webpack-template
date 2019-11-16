@@ -88,14 +88,16 @@ module.exports = {
           options: { sourceMap: true }
         }
       ]
-    }, {
-      resolve: {
-        alias: {
-          "~": "src",
-          "vue$": 'vue/dist/vue.js',
-        }
-      }
-    }, {
+    },
+    // {
+    //   resolve: {
+    //     alias: {
+    //       "~": "src",
+    //       "vue$": 'vue/dist/vue.js',
+    //     }
+    //   }
+    // },
+    {
       test: /\.css$/,
       use: [
         'style-loader',
@@ -112,6 +114,7 @@ module.exports = {
   },
   resolve: {
     alias: {
+      "~": "src",
       'vue$': 'vue/dist/vue.js'
     }
   },
